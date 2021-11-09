@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text 01"
+        android:textSize="32sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text 02"
+        android:textSize="32sp"
+        app:layout_constraintStart_toEndOf="@+id/tv_01"
+        app:layout_constraintTop_toBottomOf="@+id/tv_01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <TextView
+        android:id="@+id/tv_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text 03"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@id/tv_01"
+        app:layout_constraintBottom_toTopOf="@id/tv_01"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+    <TextView
+        android:id="@+id/tv_04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text 04"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_01"
+        app:layout_constraintBottom_toTopOf="@id/tv_02"/>
+   <Button
+        android:id="@+id/tv_05"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:background="@color/teal_700"
+        app:layout_constraintStart_toEndOf="@id/tv_01"
+        app:layout_constraintTop_toTopOf="@id/tv_01"
+        />
+
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tv_r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Text 04"
+            android:textSize="32sp"/>
+
+        <TextView
+            android:id="@+id/tv_r2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_r1"
+            android:layout_marginTop="20dp"
+            android:text="Text 05"
+            android:textSize="32sp"/>
+
+        <TextView
+            android:id="@+id/tv_r3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@color/teal_700"
+            android:text="Text 06"
+            android:textSize="32sp" />
+
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
